@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  padding: 30px;
+}
+
+.search-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.search {
+  box-sizing: border-box;
+  width: 100%;
+  height: 56px;
+  border: 1px solid #06c359;
+  border-radius: 4px;
+  padding: 6px 20px 7px;
+  font-size: 16px;
+  font-size: 1.14285714rem;
+  color: #2f353e;
+  background: #fff;
+  outline: none !important;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.btn-search {
+  color: #fff !important;
+  background: #06c359;
+  display: inline-block;
+  position: relative;
+  padding: 17px 40px;
+  font-size: 14px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  border: 0 none;
+  text-decoration: none;
+  box-sizing: border-box;
+  user-select: none;
+  box-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  white-space: nowrap;
+  box-shadow: 0 2px 2px rgb(6 195 89 / 4%), 0 4px 4px rgb(6 195 89 / 4%),
+    0 8px 8px rgb(6 195 89 / 4%), 0 16px 16px rgb(6 195 89 / 4%),
+    0 32px 32px rgb(6 195 89 / 4%);
+}
+
+.cards {
+  padding-top: 30px;
+}
+
+.card {
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px #0078ff solid;
+  border-radius: 4px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: "h3 h3 h3" "logo price price";
+
+  .price {
+    grid-area: price;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    .toMagaz {
+      text-decoration: none;
+      color: #fff !important;
+      background: #06c359;
+      display: inline-block;
+      position: relative;
+      padding: 10px 20px;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      text-align: center;
+      border: 0 none;
+      text-decoration: none;
+      box-sizing: border-box;
+      user-select: none;
+      box-shadow: 0 0 0 rgb(0 0 0 / 0%);
+      white-space: nowrap;
+      max-width: 200px;
+    }
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .logo{
+    grid-area: logo;
+    max-width: 100%;
+    width: 186px;
+    max-height: 58px;
+    height: auto;
+  }
+
+  h3 {
+    grid-area: h3;
+    margin: 0;
+    text-align: left;
+    a {
+      font-size: 19px;
+      color: #000 !important;
+      line-height: 1.2;
+      text-decoration: none !important;
+    }
+  }
+}
